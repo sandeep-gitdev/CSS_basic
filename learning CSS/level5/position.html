@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Position Property</title>
+      <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            background-color: cornflowerblue;
+            margin: 5px;
+            height: 60px;
+            width: 60px;
+            border: 3px black;
+        }
+         #static {
+            position: static;
+         }
+
+         #relative {
+            position: relative;
+            top: 20px;
+            left: 90px;
+         }
+
+         #absolute {
+            position: absolute;
+            top: 20px;
+            left: 50px;
+         }
+
+         #fixed {
+            position: fixed;
+            top: 20;
+            right: 30px;
+         }
+      </style>
+</head>
+<body>
+    <div id="static" class="box">1 static</div>
+    <div id="relative" class="box">2 Relative</div>
+    <div id="absolute" class="box">3 Absolute</div>
+    <div id="fixed" class="box">4 fixed</div>
+    <div class="box">box5</div>
+    <div class="box">box6</div>
+    <div class="box">box7</div>
+</body>
+</html>
